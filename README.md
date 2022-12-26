@@ -1,14 +1,14 @@
 ## 1.搭建开发环境
 ### 1.1 创建项目 
 ```js
-mkdir react18.2-debugger
-cd react18.2-debugger
+mkdir react18.2-source-debug
+cd react18.2-source-debug
 npm init -y
 ```
 
 ### 1.2 安装
 ```js
-npm install vite @vitejs/plugin-react --save-dev
+pnpm install vite @vitejs/plugin-react --save-dev
 ```
 
 ### 1.3 下载React18.2源码
@@ -24,7 +24,7 @@ npm install vite @vitejs/plugin-react --save-dev
 
 ### 1.4 把flow文件改为js文件
 ```js
-npm install strip-flowtype -g
+pnpm install strip-flowtype -g
 strip-flowtype src/react/packages/**/*.js
 ```
 
@@ -169,5 +169,5 @@ index.html
 
 ### 3.5 启动
 ```js
-npm run dev
+pnpm run dev
 ```
